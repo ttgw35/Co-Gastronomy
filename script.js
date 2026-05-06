@@ -1,14 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const dropdownItems = document.querySelectorAll(".has-dropdown");
 
-    const menuItem = document.querySelector(".has-submenu");
-    const submenu = document.querySelector(".submenu");
+  dropdownItems.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
 
-    menuItem.addEventListener("mouseenter", () => {
-        submenu.style.display = "block";
+        dropdownItems.forEach((otherItem) => {
+          if (otherItem !== item) otherItem.classList.remove("active");
+        });
+
+        item.classList.toggle("active");
+      }
     });
+  });
 
-    menuItem.addEventListener("mouseleave", () => {
-        submenu.style.display = "none";
-    });
-
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".has-dropdown")) {
+      dropdownItems.forEach((item) => item.classList.remove("active"));
+    }
+  });
 });
