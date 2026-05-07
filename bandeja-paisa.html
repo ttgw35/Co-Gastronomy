@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CO | Gastronomy</title>
+  <link rel="stylesheet" href="bandeja-paisa.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="brand">CO | Gastronomy</div>
+      <a href="#footer" class="support-link">Support</a>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item has-dropdown">
+          <a href="#costa" class="nav__link">La costa <span>˅</span></a>
+          <div class="dropdown">
+            <div class="dropdown__menu">
+              <a href="#arroz-atollado">Arroz atollado de mariscos</a>
+              <a href="#encocao-jaiba">Encocao de Jaiba</a>
+              <a href="#pusandao">Pusandao</a>
+            </div>
+            <div class="dropdown__image">
+              <img src="img/costa.jpg" alt="Imagen de la región Costa" />
+            </div>
+          </div>
+        </li>
+
+        <li class="nav__item has-dropdown">
+          <a href="#pacifica" class="nav__link">Pacífica <span>˅</span></a>
+          <div class="dropdown">
+            <div class="dropdown__menu">
+              <a href="#encocao-jaiba">Encocao de Jaiba</a>
+              <a href="#sancocho">Sancocho de pescado</a>
+              <a href="#arroz-atollado">Arroz atollado de mariscos</a>
+            </div>
+            <div class="dropdown__image">
+              <img src="https://res.cloudinary.com/ditgyvcpf/image/upload/v1778089880/Captura_de_pantalla_2026-05-06_125107_wetgsi.png" alt="Imagen de la región Pacífica" />
+            </div>
+          </div>
+        </li>
+
+        <li class="nav__item has-dropdown">
+          <a href="#andina" class="nav__link">Andina <span>˅</span></a>
+          <div class="dropdown">
+            <div class="dropdown__menu">
+              <a href="#bandeja-paisa">Bandeja Paisa</a>
+              <a href="#changua">Changua</a>
+              <a href="#ajiaco">Ajiaco</a>
+            </div>
+            <div class="dropdown__image">
+              <img src="img/andina.jpg" alt="Imagen de la región Andina" />
+            </div>
+          </div>
+        </li>
+
+        <li class="nav__item has-dropdown">
+          <a href="#orinoquia" class="nav__link">Orinoquía <span>˅</span></a>
+          <div class="dropdown">
+            <div class="dropdown__menu">
+              <a href="#mamona">Ternera a la llanera</a>
+              <a href="#hayaca">Hayaca</a>
+              <a href="#carne-molde">Carne a la perra</a>
+            </div>
+            <div class="dropdown__image">
+              <img src="img/orinoquia.jpg" alt="Imagen de la región Orinoquía" />
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <video class="hero__video" autoplay muted loop playsinline>
+        <source src="https://res.cloudinary.com/ditgyvcpf/video/upload/v1777665830/197205-904265109_qdg4l5.mp4" type="video/mp4" />
+        Tu navegador no soporta video HTML5.
+      </video>
+
+      <div class="hero__overlay">
+        <h1>Sabores de Colombia</h1>
+        <p>Una experiencia gastronómica por cada región del país.</p>
+      </div>
+    </section>
+
+    <section class="popular">
+      <h2>Platos populares</h2>
+
+      <div class="popular__grid">
+        <a href="#bandeja-paisa" class="popular__card">
+          <img src="https://res.cloudinary.com/ditgyvcpf/image/upload/v1777665400/7147.jpg_yfxt8f.webp" alt="Bandeja Paisa" />
+          <span>Bandeja Paisa</span>
+        </a>
+
+        <a href="#sancocho" class="popular__card">
+          <img src="https://res.cloudinary.com/ditgyvcpf/image/upload/v1777665508/IMG_9623_gk69yt.jpg" alt="Sancocho" />
+          <span>Sancocho</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="sections-title">
+      <h2>Subpágina:</h2>
+    </section>
+
+    <section id="bandeja-paisa" class="dish section-block">
+      <div class="section-block__crumb">‹ Inicio / Andina</div>
+      <div class="section-block__content">
+        <div class="section-block__text">
+          <h3>Bandeja Paisa</h3>
+          <p>
+            Uno de los platos más tradicionales y emblemáticos de la gastronomía de Colombia es la 
+            bandeja paisa, el cual, es un plato compuesto por una gran variedad de ingredientes, 
+            los cuales son, arroz, carne asada, frijol, aguacate, huevo, chicharrón, plátano maduro frito,
+            arepa, chorizo y morcilla, los cuales se sirven sobre una bandeja o plato hondo.
+            <br>
+            La historia detrás de este plato, se origina en Antioquia, en el centro de Colombia, el cual 
+            surge tras una necesidad de los campesinos de esta región, ya que, al realizar trabajos pesados 
+            en fincas, necesitaban comer tanto proteínas, como carbohidratos y grasas, ya que esto les daría 
+            energía y nutrientes, para poder seguir trabajando, por eso, la bandeja paisa fue la solución a 
+            este problema.
+          </p>
+        </div>
+        <div class="section-block__image">
+          <img src="img/bandeja-paisa.jpg" alt="Bandeja Paisa" />
+        </div>
+      </div>
+    </section>
+
+    <section id="costa" class="dish region-section">
+      <h3>La costa</h3>
+      <p>Sección principal de la región Costa.</p>
+    </section>
+
+    <section id="pacifica" class="dish region-section">
+      <h3>Pacífica</h3>
+      <p>Sección principal de la región Pacífica.</p>
+    </section>
+
+    <section id="andina" class="dish region-section">
+      <h3>Andina</h3>
+      <p>Sección principal de la región Andina.</p>
+    </section>
+
+    <section id="orinoquia" class="dish region-section">
+      <h3>Orinoquía</h3>
+      <p>Sección principal de la región Orinoquía.</p>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <h2>Síguenos en redes.</h2>
+
+    <div class="socials">
+      <a href="#" class="social social--facebook" aria-label="Facebook">f</a>
+      <a href="#" class="social social--instagram" aria-label="Instagram">⌁</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
