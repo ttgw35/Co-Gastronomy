@@ -216,7 +216,7 @@ body {
 .accent--top-left {
   width: 90px;
   height: 75px;
-  background-color: #c0392b;  /* rojo principal */
+  background-color: #deb318;  
   top: -18px;
   left: -18px;
 }
@@ -225,7 +225,7 @@ body {
 .accent--bottom-right {
   width: 90px;
   height: 75px;
-  background-color: #c0392b;  /* mismo rojo, puedes usar #922b21 para más oscuro */
+  background-color: #deb318;  
   bottom: -18px;
   right: -10px;
 }
