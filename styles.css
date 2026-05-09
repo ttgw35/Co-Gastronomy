@@ -1,3 +1,8 @@
+/* ============================================================
+   FUENTES - Playfair Display (títulos) + Lora (cuerpo)
+   Agrega esto en el <head> de cada HTML:
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+============================================================ */
 
 /* VARIABLES DE COLOR */
 :root {
