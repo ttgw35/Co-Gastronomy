@@ -160,7 +160,6 @@ body {
 
 /* titulo*/
 .dish-title {
-  font-family: 'Playfair Display', serif;
   font-size: 2.4rem;
   font-weight: 700;
   color: #1a1a1a;
@@ -171,9 +170,8 @@ body {
 /* ─imagen principal */
 .hero-image-block {
   position: relative;
-  /* La imagen arranca desplazada hacia la derecha, como en el diseño */
-  margin-left: 10%;
-  margin-bottom: 1.4rem;
+  width: 45%; /* mas puqueño */
+  margin: 0 auto 1.4rem; /* centrada */
 }
 
 .hero-img {
@@ -198,8 +196,9 @@ body {
 /* texto descriptivo */
 .descriptive-text {
   font-size: 0.88rem;
-  color: #555;
+  color: #333;
   margin-bottom: 1.4rem;
+  text-align: center;
 }
 
 /* hero video */
