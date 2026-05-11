@@ -123,13 +123,7 @@ body {
   display: block;
 }
 
-/* "Subpagina" */
-.ref-label{
-  font-size: 1.5rem;
-  font-weight: 400;
-  padding: 2rem 2.5rem 0; 
-  color: #1a1a1a;
-}
+
 
 /* recuadro blanco*/
 .subpage-wrapper{
@@ -168,7 +162,6 @@ body {
 
 /*Titulo del plato*/
 .dish-title {
-  font-family: 'Playfair Display', serif;
   font-size: 2.4rem;
   font-weight: 700;
   color: #1a1a1a;

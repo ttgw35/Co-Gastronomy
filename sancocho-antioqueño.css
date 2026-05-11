@@ -160,7 +160,6 @@ body {
 
 /* titulo*/
 .dish-title {
-  font-family: 'Playfair Display', serif;
   font-size: 2.4rem;
   font-weight: 700;
   color: #1a1a1a;
@@ -171,9 +170,8 @@ body {
 /* ─imagen principal */
 .hero-image-block {
   position: relative;
-  /* La imagen arranca desplazada hacia la derecha, como en el diseño */
-  margin-left: 10%;
-  margin-bottom: 1.4rem;
+  width: 45%; /* mas puqueño */
+  margin: 0 auto 1.4rem; /* centrada */
 }
 
 .hero-img {
@@ -198,41 +196,56 @@ body {
 /* texto descriptivo */
 .descriptive-text {
   font-size: 0.88rem;
-  color: #555;
+  color: #333;
   margin-bottom: 1.4rem;
+  text-align: center;
 }
 
-/* hero video */
-.hero-video-block {
+/* HERO */
+.hero {
   position: relative;
-  width: 68%;
-  margin: 0 auto 2.2rem;
-}
-
-.hero-video-img {
   width: 100%;
-  max-height: 280px;
-  object-fit: cover;
-  border-radius: 6px;
-  display: block;
+  height: 72vh;
+  overflow: hidden;
+  background: #000;
 }
 
-.video-label {
-  position: absolute;
-  bottom: 10px;
-  right: 14px;
-  background: rgba(0, 0, 0, 0.45);
-  color: #fff;
-  font-size: 0.78rem;
-  padding: 3px 8px;
-  border-radius: 3px;
+.hero__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.7);
 }
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  color: #fff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 50%);
+}
+
+.hero__overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero__overlay p {
+  font-size: 1.1rem;
+  max-width: 520px;
+}
+
 
 /* tarjetas de texto */
 .cards-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  margin-top: 20px;
 }
 
 .info-card {
